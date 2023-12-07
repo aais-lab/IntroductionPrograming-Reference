@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/layout.css">
+    <link rel="stylesheet" href="../style/modulePage.css">
+    <link rel="stylesheet" href="../style/prism.css">
+    <script src="../style/prism.js" defer></script>
+    <title>Reference Manual</title>
+</head>
+<body>
+    <header class="Layout-module--root">
+        <a href="../index.html" class="Reference-module--title">Introduction Programing Reference</a>
+    </header>
+    <main class="grid-module--container Layout-module--main">
+        <div class="grid-module--grid Layout-module--content Section-module--category">
+            <p>category</p>
+            <!-- カテゴリ -->
+            <p class="Section-module--categoryName">Shape</p>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">name</p>
+                <p class="Section-module--indexJp">名前</p>
+            </div>
+            <!-- このページで説明するやつ -->
+            <p class="Section-module--moduleName">Quad</p>
+        </div>
+        <div class="grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Description</p>
+                <p class="Section-module--indexJp">説明</p>
+            </div>
+            <!-- クラス・関数の説明 -->
+            <pre class="Section-module--descriptionText">
+                ウィンドウに四角形を描画するために使用されます。
+
+                頂点となる任意の4点のX,Y座標<b>x1</b>,<b>y1</b>,<b>x2</b>,<b>y2</b>,<b>x3</b>,<b>y3</b>,<b>x4</b>,<b>y4</b>からなる四角形を描画します。Rectangleとは異なり、4点全てを任意に決めることができます。
+
+                図形の色は<b>fill</b>関数で、塗りつぶしなしは<b>noFill</b>関数で指定することができます。
+                枠線の色は<b>outlineFill</b>関数で、枠線なしは<b>noOutline</b>関数で指定できます。
+                枠線の太さは<b>outlineWidth</b>関数で指定可能です。
+
+                四角形の位置は座標を指定する以外に<b>rotate</b>関数を使用することで変化させることができます。ウィンドウの左上座標<b>0,0</b>もしくは<b>changeBasePoint</b>関数で任意に設定された座標を中心とした円周上を移動します。また、移動時に角度も変化します。角度のみを変化させたい場合は<b>changeBasePoint</b>関数で四角形の重心座標を指定してください。
+            </pre>
+        </div>
+        <div class="grid-module--col Layout-module--content hide">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Examples</p>
+                <p class="Section-module--indexJp">サンプル</p>
+            </div>
+            <div class="grid-module--grid Section-module--example">
+                <div class="Section-module--exampleCodeContainer">
+                    <pre>
+                        <!-- サンプル -->
+                        <code class="Section-module--exampleCode language-Python">
+                            from IP import *
+                        </code>
+                    </pre>
+                </div>
+                <!-- サンプルの実行画像 -->
+                <img src="./img/" alt="" class="Section-module--exampleImg">
+            </div>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Syntax</p>
+                <p class="Section-module--indexJp">構文</p>
+            </div>
+            <ul class="Section-module--syntaxList">
+                <!-- 構文 -->
+                <li>Quad(x1, y1, x2, y2, x3, y3, x4, y4)</li>
+            </ul>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Parameters</p>
+                <p class="Section-module--indexJp">引数</p>
+            </div>
+            <ul class="Section-module--paramList">
+                <!-- 必要なパラメータ -->
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">x1</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。1つ目の点のX座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">y1</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。1つ目の点のY座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">x2</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。2つ目の点のX座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">y2</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。2つ目の点のY座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">x3</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。3つ目の点のX座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">y3</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。3つ目の点のY座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">x4</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。4つ目の点のX座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">y4</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。4つ目の点のY座標</p>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Return</p>
+                <p class="Section-module--indexJp">戻り値</p>
+            </div>
+            <!-- 実行時に返却される値 -->
+            <p class="Section-module--return">Quadインスタンス</p>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Related</p>
+                <p class="Section-module--indexJp">関連</p>
+            </div>
+            <ul class="Section-module--relatedList">
+                <!-- 関連する関数・クラス -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Shape_fill.html" class="relatedModule">fill()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Shape_noFill.html" class="relatedModule">noFill()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Shape_outlineFill.html" class="relatedModule">outlineFill()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Shape_noOutline.html" class="relatedModule">noOutline()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Shape_outlineWidth.html" class="relatedModule">outlineWidth()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Shape_changeBasePoint.html" class="relatedModule">changeBasePoint()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem hide">
+                    <a href="Shape_delete.html" class="relatedModule">delete()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Shape_rotate.html" class="relatedModule">rotate()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Rectangle.html" class="relatedModule">Rectangle</a>
+                </li>
+            </ul>
+        </div>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* grid */
+.grid-module--container{
+    padding: 20pt 40pt;
+}
+.grid-module--col{
+    padding: 0 10px;
+}
+.grid-module--grid{
+    display: flex;
+}

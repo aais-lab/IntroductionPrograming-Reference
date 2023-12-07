@@ -1,0 +1,95 @@
+@charset "utf-8";
+    @font-face{
+        font-family: "NotoSans";
+        src: url(../font/NotoSansJP-Regular.ttf);
+    }
+/* module page */
+    .Section-module--category{
+        font-size: 15pt;
+        gap: 20px;
+        color: var(--font-color-gray);
+        margin-bottom: 10px;
+    }
+    /* index */
+    .Section-module--index{
+        font-size: 12pt;
+        font-weight: 200;
+        text-align: justify;
+        width: 150px;
+        margin-bottom: 5px;
+    }
+    .Section-module--indexEn{
+        color: var(--font-color-gray);
+    }
+    .Section-module--indexJp{
+        font-size: 15pt;
+        font-weight: 600;
+    }
+    /* discription */
+    .Section-module--descriptionText{
+        font-size: 14pt;
+        font-family: NotoSans;
+        text-align: justify;
+        color: var(--font-color-black);
+        padding-left: 20px;
+    }
+    b{
+        background-color: var(--main-color-lightgray);
+        font-family: monospace;
+        padding: 2px 5px;
+        margin: 0 2px;
+        font-weight: 100;
+        border-radius: 5px;
+    }
+    i{
+        font-family: monospace;
+        font-weight: 100;
+        margin: 0 2px;
+    }
+    .hide{
+        display: none;
+    }
+    /* example */
+    .Section-module--example{
+        font-size: 10pt;
+        color: var(--font-color-black);
+        gap: 10px;
+        position: relative;
+        margin-bottom: 20px;
+        z-index: -1;
+    }
+    .Section-module--exampleCodeContainer{
+        display: inline;
+        flex: 1;
+    }
+    .Section-module--exampleCodeContainer pre{
+        padding-left: 10px;
+        background-color: var(--main-color-lightgray);
+    }
+    .Section-module--exampleImg{
+        min-width: 200px;
+        max-width: 260px;
+        min-height: 200px;
+        max-height: 260px;
+    }
+    /* Syntax */
+    .Section-module--syntaxList, .Section-module--paramList, .Section-module--return, .Section-module--relatedList{
+        margin-top: 20px;
+        font-family: monospace;
+        color: var(--font-color-black);
+        font-size: 16pt;
+    }
+    .Section-module--paramItem{
+        display: table-row;
+    }
+    .Section-module--paramItem p{
+        display: table-cell;
+        padding-right: 20px;
+        padding-bottom: 5px;
+    }
+    .paramBrief{
+        font-size: 13pt;
+    }
+    .Section-module--relatedItem{
+        margin-bottom: 10px;
+    }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/grid.css">
+    <link rel="stylesheet" href="./style/layout.css">
+    <link rel="stylesheet" href="./style/referenceList.css">
+    <script src="ItemList.js"></script>
+    <title>Reference Manual</title>
+</head>
+<body>
+    <header class="Layout-module--root">
+        <a href="index.html" class="Reference-module--title">Introduction Programing Reference</a>
+    </header>
+    <main class="grid-module--container Layout-module--main">
+        <h1 class="grid-module--col Layout-module--pageTitle">Reference</h1>
+        <!-- fillter -->
+        <div class="grid-module--col Reference-module--fillter"> 
+            <form action="" role="search">
+                <input type="text" id="search" name="search" placeholder="Fillter by keywords..." spellcheck="false" value="">
+            </form>
+        </div>
+
+        <!-- template -->
+        <template id="categoryName-template">
+            <h3 class="grid-module--col ReferenceList-module--categoryName"></h3>
+        </template>
+        <template id="subcategoryName-template">
+            <div class="ReferenceList-module--subcategory">
+                <p class="ReferenceList-module--subcategoryName"></p>
+            </div>
+        </template>
+        <template id="referenceItem-template">
+            <li class="ReferenceList-module--item grid-module--grid">
+                <a href="" class="ReferenceList-module--itemName"></a>
+                <p class="ReferenceList-module--itemBrief"></p>
+            </li>
+        </template>
+
+        <!-- content -->
+        <div id="ReferenceList-container">
+        </div>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/layout.css">
+    <link rel="stylesheet" href="../style/modulePage.css">
+    <link rel="stylesheet" href="../style/prism.css">
+    <script src="../style/prism.js" defer></script>
+    <title>Reference Manual</title>
+</head>
+<body>
+    <header class="Layout-module--root">
+        <a href="../index.html" class="Reference-module--title">Introduction Programing Reference</a>
+    </header>
+    <main class="grid-module--container Layout-module--main">
+        <div class="grid-module--grid Layout-module--content Section-module--category">
+            <p>category</p>
+            <p class="Section-module--categoryName">Window</p>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">name</p>
+                <p class="Section-module--indexJp">名前</p>
+            </div>
+            <p class="Section-module--moduleName">Window.title</p>
+        </div>
+        <div class="grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Description</p>
+                <p class="Section-module--indexJp">説明</p>
+            </div>
+            <pre class="Section-module--descriptionText">
+                ウィンドウのタイトルを変更するために使用されます。
+
+                マークダウン等のプレーンテキスト以外の文字列は無効になり、プレーンテキストとして表示されます。
+            </pre>
+        </div>
+        <div class="grid-module--col Layout-module--content hide">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Examples</p>
+                <p class="Section-module--indexJp">サンプル</p>
+            </div>
+            <div class="grid-module--grid Section-module--example">
+                <div class="Section-module--exampleCodeContainer">
+                    <pre>
+                        <code class="Section-module--exampleCode language-Python">
+                            import IP
+
+                            window = IP.Window()
+                            window.title("")
+                            window.show()
+                        </code>
+                    </pre>
+                </div>
+                <img src="./img/window_title_1.png" alt="" class="Section-module--exampleImg">
+            </div>
+            <div class="grid-module--grid Section-module--example">
+                <div class="Section-module--exampleCodeContainer">
+                    <pre>
+                        <code class="Section-module--exampleCode language-Python">
+                            import IP
+
+                            window = IP.Window()
+                            window.title("サンプル2")
+                            window.show()
+                        </code>
+                    </pre>
+                </div>
+                <img src="./img/window_title_2.png" alt="" class="Section-module--exampleImg">
+            </div>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Syntax</p>
+                <p class="Section-module--indexJp">構文</p>
+            </div>
+            <ul class="Section-module--syntaxList">
+                <li><i>Window</i>.title(title)</li>
+            </ul>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Parameters</p>
+                <p class="Section-module--indexJp">引数</p>
+            </div>
+            <ul class="Section-module--paramList">
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">title</p>
+                    <p class="paramType">(str)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。ウィンドウタイトル</p>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Return</p>
+                <p class="Section-module--indexJp">戻り値</p>
+            </div>
+            <p class="Section-module--return">void</p>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Related</p>
+                <p class="Section-module--indexJp">関連</p>
+            </div>
+            <ul class="Section-module--relatedList">
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Window.html" class="relatedModule">Window</a>
+                </li>
+            </ul>
+        </div>
+        
+    </main>
+</body>
+</html>

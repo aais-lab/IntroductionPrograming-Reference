@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/layout.css">
+    <link rel="stylesheet" href="../style/modulePage.css">
+    <link rel="stylesheet" href="../style/prism.css">
+    <script src="../style/prism.js" defer></script>
+    <title>Reference Manual</title>
+</head>
+<body>
+    <header class="Layout-module--root">
+        <a href="../index.html" class="Reference-module--title">Introduction Programing Reference</a>
+    </header>
+    <main class="grid-module--container Layout-module--main">
+        <div class="grid-module--grid Layout-module--content Section-module--category">
+            <p>category</p>
+            <p class="Section-module--categoryName">Window</p>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">name</p>
+                <p class="Section-module--indexJp">名前</p>
+            </div>
+            <p class="Section-module--moduleName">Window</p>
+        </div>
+        <div class="grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Description</p>
+                <p class="Section-module--indexJp">説明</p>
+            </div>
+            <pre class="Section-module--descriptionText">
+                図形などを描画するウィンドウを表示するために使われます。
+                <b>show</b>関数を実行すると、その時点までに生成された図形などを描画済みのウィンドウが表示されます。
+                
+                ウィンドウの大きさは<b>size</b>関数で、幅<b>width</b>高さ<b>height</b>を指定できます。
+                上限値は幅<b>width</b>1000px、高さ<b>height</b>700pxです。上限を超えて指定した場合、上限値が適用されます。
+
+                背景色<b>background</b>はカラーコード（例<b>#000000</b>）、色名（例<b>red</b>）または<b>color</b>関数を使って指定できます。画像は指定できません。
+
+                ウィンドウの大きさの変更は<b>size</b>関数、タイトルの変更は<b>title</b>関数、背景色の変更は<b>background</b>関数でできます。
+            </pre>
+        </div>
+        <div class="grid-module--col Layout-module--content hide">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Examples</p>
+                <p class="Section-module--indexJp">サンプル</p>
+            </div>
+            <div class="grid-module--grid Section-module--example">
+                <div class="Section-module--exampleCodeContainer">
+                    <pre>
+                        <code class="Section-module--exampleCode language-Python">
+                            import IP
+
+                            window = IP.Window()
+                            window.show()
+                        </code>
+                    </pre>
+                </div>
+                <img src="./img/window_1.png" alt="" class="Section-module--exampleImg">
+            </div>
+            <div class="grid-module--grid Section-module--example">
+                <div class="Section-module--exampleCodeContainer">
+                    <pre>
+                        <code class="Section-module--exampleCode language-Python">
+                            import IP
+
+                            window = IP.Window(500,500,"white")
+                            window.show()
+                        </code>
+                    </pre>
+                </div>
+                <img src="./img/window_1.png" alt="" class="Section-module--exampleImg">
+            </div>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Syntax</p>
+                <p class="Section-module--indexJp">構文</p>
+            </div>
+            <ul class="Section-module--syntaxList">
+                <li>Window(<i>width</i>,<i>height</i>,<i>backgroundcolor</i>)</li>
+            </ul>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Parameters</p>
+                <p class="Section-module--indexJp">引数</p>
+            </div>
+            <ul class="Section-module--paramList">
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">width</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const">1〜1000</p>
+                    <p class="paramBrief">ウィンドウの幅</p>
+                    
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">height</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const">1〜700</p>
+                    <p class="paramBrief">ウィンドウの高さ</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">background</p>
+                    <p class="paramType">(color)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">ウィンドウの背景色</p>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Return</p>
+                <p class="Section-module--indexJp">戻り値</p>
+            </div>
+            <p class="Section-module--return">void</p>
+        </div>
+        <div class="grid-module--grid grid-module--col Layout-module--content">
+            <div class="Section-module--index">
+                <p class="Section-module--indexEn">Related</p>
+                <p class="Section-module--indexJp">関連</p>
+            </div>
+            <ul class="Section-module--relatedList">
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Window_show.html" class="relatedModule">show()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Window_size.html" class="relatedModule">size()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Window_title.html" class="relatedModule">title()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Window_background.html" class="relatedModule">background()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="color.html" class="relatedModule">color()</a>
+                </li>
+            </ul>
+        </div>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* ReferenceList */
+    .Reference-module--fillter{
+        margin: 40px  0;
+    }
+    #search{
+        font-size: 20pt;
+        line-height: 30pt;
+        width: 100%;
+        padding-left: 10px;
+        border: none;
+        border-bottom: 3px solid var(--main-color-gray);
+        transition: .2s;
+    }
+    #search:focus{
+        border-bottom: 3px solid var(--main-color-black);
+        transition: .2s;
+    }
+    .ReferenceList-module--categoryName{
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    .ReferenceList-module--moduleList{
+        width: 100%;
+    }
+    .ReferenceList-module--subcategory{
+        border-left: 3px solid var(--main-color-gray);
+        border-right: 1px solid var(--main-color-gray);
+        margin-left: 30px;
+        margin-bottom: 5px;
+        padding: 10px;
+        font-size: 15pt;
+        line-height: 25px;
+        font-weight: 100;
+        width: 25%;
+    }
+    .ReferenceList-module--item{
+        font-size: 13pt;
+        line-height: 25px;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+        padding-left: 10px;
+    }
+    .ReferenceList-module--item:hover{
+        background-color: var(--main-color-lightgray);
+    }
+    .ReferenceList-module--itemName{
+        font-weight: 100;
+        width: 40%;
+    }
+    .ReferenceList-module--itemBrief{
+        width: 70%;
+        font-size: 12pt;
+        color: var(--font-color-black);
+        font-weight: 100;
+    }
