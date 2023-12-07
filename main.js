@@ -1,7 +1,7 @@
 let text = document.getElementById('search');
 text.addEventListener('input', search);
 
-const allReferenceList = JSON.parse(fs.readFileSync("list.json",'utf-8'));
+// const allReferenceList = JSON.parse(fs.readFileSync("list.json",'utf-8'));
 create_htmlReferenceList(allReferenceList)
 
 function search(event){
