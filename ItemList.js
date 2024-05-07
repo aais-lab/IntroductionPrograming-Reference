@@ -14,6 +14,16 @@ const allReferenceList =
                 ]
             },
             {
+                "subName":"設定",
+                "list":[
+                    {
+                        "name":"windowMaxSize()",
+                        "link":"./module/Window_windowMaxSize.html",
+                        "brief":"windowの最大サイズを変更する"
+                    }
+                ]
+            },
+            {
                 "subName":"関数",
                 "list":[
                     {
@@ -35,7 +45,7 @@ const allReferenceList =
                         "name":"show()",
                         "link":"./module/Window_show.html",
                         "brief":"生成したウィンドウを画面に描画する"
-                    }
+                    },
                 ]
             }
         ]
@@ -83,37 +93,37 @@ const allReferenceList =
                 "list":[
                     {
                         "name":"Line",
-                        "link":"./module/Line.html",
+                        "link":"./module/Shape_Line.html",
                         "brief":"開始と終了の座標を指定して直線をウィンドウに描画する"
                     },
                     {
                         "name":"Triangle",
-                        "link":"./module/Triangle.html",
+                        "link":"./module/Shape_Triangle.html",
                         "brief":"3つの頂点の座標を指定して三角形をウィンドウに描画する"
                     },
                     {
                         "name":"Rectangle",
-                        "link":"./module/Rectangle.html",
+                        "link":"./module/Shape_Rectangle.html",
                         "brief":"左上の座標点、幅と高さを指定して長方形もしくは正方形をウィンドウに描画する"
                     },
                     {
                         "name":"Quad",
-                        "link":"./module/Quad.html",
+                        "link":"./module/Shape_Quad.html",
                         "brief":"4点の座標を指定して任意の四角形をウィンドウに描画する"
                     },
                     {
                         "name":"Ellipse",
-                        "link":"./module/Ellipse.html",
+                        "link":"./module/Shape_Ellipse.html",
                         "brief":"中心座標と幅、高さを指定して楕円もしくは円をウィンドウに描画する"
                     },
                     {
                         "name":"Point",
-                        "link":"./module/Point.html",
+                        "link":"./module/Shape_Point.html",
                         "brief":"座標と大きさを指定して点をウィンドウに描画する"
                     },
                     {
                         "name":"Arc",
-                        "link":"./module/Arc.html",
+                        "link":"./module/Shape_Arc.html",
                         "brief":"中心座標と楕円の幅と高さ、開始角度、内角を指定して扇形もしくは円弧をウィンドウに描画する"
                     }
                 ]
@@ -259,7 +269,7 @@ const allReferenceList =
                 "list":[
                     {
                         "name":"colorMode()",
-                        "link":"./module/colorMode.html",
+                        "link":"./module/color_colorMode.html",
                         "brief":"カラーモードを指定する"
                     },
                     {
@@ -274,7 +284,7 @@ const allReferenceList =
                 "list":[
                     {
                         "name":"COLOR_MODE",
-                        "link":"./module/COLOR_MODE.html",
+                        "link":"./module/color_COLOR_MODE.html",
                         "brief":"現在のカラーモード"
                     }
                 ]
@@ -441,6 +451,41 @@ const allReferenceList =
     //                     "name":"second()",
     //                     "link":"./module/Data_second.html",
     //                     "brief":"現在の秒"
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // },
+    // {
+    //     "category":"Music",
+    //     "subcategory":[
+    //         {
+    //             "subname":"",
+    //             "list":[
+    //                 {
+    //                     "name":"Music",
+    //                     "link":"./module/Music.html",
+    //                     "brief":""
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             "subname":"関数",
+    //             "list":[
+    //                 {
+    //                     "name":"loadFile()",
+    //                     "link":"./module/Music_loadFile.html",
+    //                     "brief":""
+    //                 },
+    //                 {
+    //                     "name":"play()",
+    //                     "link":"./module/Music_play.html",
+    //                     "brief":""
+    //                 },
+    //                 {
+    //                     "name":"stop()",
+    //                     "link":"./module/Music_stop.html",
+    //                     "brief":""
     //                 }
     //             ]
     //         }

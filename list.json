@@ -453,5 +453,40 @@
                 ]
             }
         ]
+    },
+    {
+        "category":"Music",
+        "subcategory":[
+            {
+                "subname":"",
+                "list":[
+                    {
+                        "name":"Music",
+                        "link":"./module/Music.html",
+                        "brief":""
+                    }
+                ]
+            },
+            {
+                "subname":"関数",
+                "list":[
+                    {
+                        "name":"loadFile()",
+                        "link":"./module/Music_loadFile.html",
+                        "brief":""
+                    },
+                    {
+                        "name":"play()",
+                        "link":"./module/Music_play.html",
+                        "brief":""
+                    },
+                    {
+                        "name":"stop()",
+                        "link":"./module/Music_stop.html",
+                        "brief":""
+                    }
+                ]
+            }
+        ]
     }
 ]
