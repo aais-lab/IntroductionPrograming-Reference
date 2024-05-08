@@ -50,41 +50,41 @@ const allReferenceList =
             }
         ]
     },
-    // {
-    //     "category":"Draw",
-    //     "subcategory":[
-    //         {
-    //             "subName":"",
-    //             "list":[
-    //                 {
-    //                     "name":"@animation()",
-    //                     "link":"./module/Draw_animation.html",
-    //                     "brief":"ウィンドウに表示する関数を指定し、アニメーションするかを決める"
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "subName":"関数",
-    //             "list":[
-    //                 {
-    //                     "name":"animationSpeed()",
-    //                     "link":"./module/Draw_animationSpeed.html",
-    //                     "brief":"アニメーションする速度を変更する"
-    //                 },
-    //                 {
-    //                     "name":"clear()",
-    //                     "link":"./module/Draw_clear.html",
-    //                     "brief":"これまで描画した図形や文字を全て削除する"
-    //                 },
-    //                 {
-    //                     "name":"stop()",
-    //                     "link":"./module/Draw_stop.html",
-    //                     "brief":"描画の繰り返しを停止させる"
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // },
+    {
+        "category":"Draw",
+        "subcategory":[
+            {
+                "subName":"",
+                "list":[
+                    {
+                        "name":"@animation()",
+                        "link":"./module/Draw_animation.html",
+                        "brief":"ウィンドウに表示する関数を指定し、アニメーションするかを決める"
+                    }
+                ]
+            },
+            {
+                "subName":"関数",
+                "list":[
+                    {
+                        "name":"animationSpeed()",
+                        "link":"./module/Draw_animationSpeed.html",
+                        "brief":"アニメーションする速度を変更する"
+                    },
+                    {
+                        "name":"clear()",
+                        "link":"./module/Draw_clear.html",
+                        "brief":"これまで描画した図形や文字を全て削除する"
+                    },
+                    {
+                        "name":"stop()",
+                        "link":"./module/Draw_stop.html",
+                        "brief":"描画の繰り返しを停止させる"
+                    }
+                ]
+            }
+        ]
+    },
     {
         "category":"Shape",
         "subcategory":[
@@ -176,12 +176,11 @@ const allReferenceList =
                         "link":"./module/Shape_outlineStyle.html",
                         "brief":"円弧の枠線のスタイルを変更する"
                     },
-                    // {
-                    //     "name":"delete()",
-                    //     "link":"./module/Shape_delete.html",
-                    //     "brief":"呼び出された図形を削除する"
-                    // }
-        
+                    {
+                        "name":"delete()",
+                        "link":"./module/Shape_delete.html",
+                        "brief":"呼び出された図形を削除する"
+                    }
                 ]
             }
         ]

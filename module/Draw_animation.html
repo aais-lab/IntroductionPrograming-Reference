@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Window</p>
+            <p class="Section-module--moduleName">@animation</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,10 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                描画処理のメインとなる関数に付与するデコレータです。
+
+                <b>animationSpeed</b>関数で設定された<b>animetionSpeed</b>に応じて描画速度を切り替えることができます。
+                <b>isAnimation</b>が<b>True</b>を指定された場合、<b>@animation</b>デコレータが付与された関数は関数内の描画処理開始前にこれまで描画した全オブジェクト（図形や文字、画像等）を消去して再描画を行う。<b>False</b>が指定された場合、これまでに描画されたオブジェクトを消去せずに再度描画される。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +66,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li>@animation(isAnimation)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +77,10 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">isAnimation</p>
+                    <p class="paramType">(boolean)</p>
+                    <p class="param Const">True/False</p>
+                    <p class="paramBrief">必須。アニメーションするか</p>
                 </li>
             </ul>
         </div>
@@ -97,7 +100,7 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="./Draw_animationSpeed.html" class="relatedModule">animationSpeed()</a>
                 </li>
             </ul>
         </div>

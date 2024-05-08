@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Window</p>
+            <p class="Section-module--moduleName">animationSpeed</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,10 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                <b>@animation</b>において描画速度を変更する関数です。
+
+                初期値は<b>30</b>で、<b>1</b>から<b>100</b>までの整数で指定することができます。
+                <b>1</b>が最低速、<b>100</b>が最高速ですが、描画するPCのメモリ等によっては速度を上げるほど動作が不安定になります。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +66,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li>animationSpeed(speed)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +77,10 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">speed</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const">1〜100</p>
+                    <p class="paramBrief">必須。アニメーション速度</p>
                 </li>
             </ul>
         </div>
@@ -97,7 +100,7 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Draw_animation.html" class="relatedModule">@animation</a>
                 </li>
             </ul>
         </div>
