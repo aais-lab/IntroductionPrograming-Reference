@@ -18,7 +18,7 @@
         <div class="grid-module--grid Layout-module--content Section-module--category">
             <p>category</p>
             <!-- カテゴリ -->
-            <p class="Section-module--categoryName">Window</p>
+            <p class="Section-module--categoryName">Date</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Window</p>
+            <p class="Section-module--moduleName">date</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,9 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                <!-- 現在の日時を取得するために使用されます。 -->
+                本日の日付を取得するために使用されます。
+                西暦年月日を半角ハイフン（<b>-</b>）区切りの文字列として取得できます。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +65,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li>date()</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +76,7 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">None</p>
                 </li>
             </ul>
         </div>
@@ -87,7 +86,7 @@
                 <p class="Section-module--indexJp">戻り値</p>
             </div>
             <!-- 実行時に返却される値 -->
-            <p class="Section-module--return">void</p>
+            <p class="Section-module--return">yyyy-mm-dd形式の日付</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -97,7 +96,22 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Date_year.html" class="relatedModule">year()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Date_month.html" class="relatedModule">month()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Date_day.html" class="relatedModule">day()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Date_hour.html" class="relatedModule">hour()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Date_minute.html" class="relatedModule">minute()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Date_second.html" class="relatedModule">second()</a>
                 </li>
             </ul>
         </div>

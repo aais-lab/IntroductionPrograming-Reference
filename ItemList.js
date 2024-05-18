@@ -410,51 +410,51 @@ const allReferenceList =
     //         }
     //     ]
     // },
-    // {
-    //     "category":"Date",
-    //     "subcategory":[
-    //         {
-    //             "subName":"",
-    //             "list":[
-    //                 {
-    //                     "name":"date()",
-    //                     "link":"./module/Data_date.html",
-    //                     "brief":"現在の年月日"
-    //                 },
-    //                 {
-    //                     "name":"year()",
-    //                     "link":"./module/Data_year.html",
-    //                     "brief":"現在の西暦年"
-    //                 },
-    //                 {
-    //                     "name":"month()",
-    //                     "link":"./module/Data_month.html",
-    //                     "brief":"現在の月"
-    //                 },
-    //                 {
-    //                     "name":"day()",
-    //                     "link":"./module/Data_day.html",
-    //                     "brief":"現在の日付"
-    //                 },
-    //                 {
-    //                     "name":"hour()",
-    //                     "link":"./module/Data_hour.html",
-    //                     "brief":"現在の時間"
-    //                 },
-    //                 {
-    //                     "name":"minute()",
-    //                     "link":"./module/Data_minute.html",
-    //                     "brief":"現在の分"
-    //                 },
-    //                 {
-    //                     "name":"second()",
-    //                     "link":"./module/Data_second.html",
-    //                     "brief":"現在の秒"
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // },
+    {
+        "category":"Date",
+        "subcategory":[
+            {
+                "subName":"",
+                "list":[
+                    {
+                        "name":"date()",
+                        "link":"./module/Date_date.html",
+                        "brief":"現在の年月日"
+                    },
+                    {
+                        "name":"year()",
+                        "link":"./module/Date_year.html",
+                        "brief":"現在の西暦年"
+                    },
+                    {
+                        "name":"month()",
+                        "link":"./module/Date_month.html",
+                        "brief":"現在の月"
+                    },
+                    {
+                        "name":"day()",
+                        "link":"./module/Date_day.html",
+                        "brief":"現在の日付"
+                    },
+                    {
+                        "name":"hour()",
+                        "link":"./module/Date_hour.html",
+                        "brief":"現在の時間"
+                    },
+                    {
+                        "name":"minute()",
+                        "link":"./module/Date_minute.html",
+                        "brief":"現在の分"
+                    },
+                    {
+                        "name":"second()",
+                        "link":"./module/Date_second.html",
+                        "brief":"現在の秒"
+                    }
+                ]
+            }
+        ]
+    },
     // {
     //     "category":"Music",
     //     "subcategory":[
