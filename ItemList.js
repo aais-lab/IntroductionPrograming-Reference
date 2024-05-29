@@ -290,81 +290,91 @@ const allReferenceList =
             }
         ]
     },
-    // {
-    //     "category":"Mouse",
-    //     "subcategory":[
-    //         {
-    //             "subName":"",
-    //             "list":[
-    //                 {
-    //                     "name":"@mouseMoved",
-    //                     "link":"./module/Mouse_mouseMoved.html",
-    //                     "brief":"マウスが移動した時に実行したい関数を指定する"
-    //                 },
-    //                 {
-    //                     "name":"@mousePressed",
-    //                     "link":"./module/Mouse_mousePressed.html",
-    //                     "brief":"マウスのボタンが押された時に実行したい関数を指定する"
-    //                 },
-    //                 {
-    //                     "name":"@mouseClicked",
-    //                     "link":"./module/Mouse_mouseClicked.html",
-    //                     "brief":"マウスのボタンを押して話した時に実行したい関数を指定する"
-    //                 },
-    //                 {
-    //                     "name":"@mouseDragged",
-    //                     "link":"./module/Mouse_mouseDragged.html",
-    //                     "brief":"マウスのボタンを押して動かした時に実行したい関数を指定する"
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "subName":"変数",
-    //             "list":[
-    //                 {
-    //                     "name":"X",
-    //                     "link":"./module/Mouse_X.html",
-    //                     "brief":"マウスカーソルがある現在のX座標"
-    //                 },
-    //                 {
-    //                     "name":"Y",
-    //                     "link":"./module/Mouse_Y.html",
-    //                     "brief":"マウスカーソルがある現在のY座標"
-    //                 },
-    //                 {
-    //                     "name":"pressX",
-    //                     "link":"./module/Mouse_pressX.html",
-    //                     "brief":"マウスボタンを押したマウスカーソルのX座標"
-    //                 },
-    //                 {
-    //                     "name":"pressY",
-    //                     "link":"./module/Mouse_pressY.html",
-    //                     "brief":"マウスボタンを押したマウスカーソルのY座標"
-    //                 },
-    //                 {
-    //                     "name":"clickX",
-    //                     "link":"./module/Mouse_clickX.html",
-    //                     "brief":"マウスボタンを押して離した時のマウスカーソルのX座標"
-    //                 },
-    //                 {
-    //                     "name":"clickY",
-    //                     "link":"./module/Mouse_clickY.html",
-    //                     "brief":"マウスボタンを押して離した時のマウスカーソルのY座標"
-    //                 },
-    //                 {
-    //                     "name":"pressButton",
-    //                     "link":"./module/Mouse_pressButton.html",
-    //                     "brief":"押されたマウスボタンの種類"
-    //                 },
-    //                 {
-    //                     "name":"isPressed",
-    //                     "link":"./module/Mouse_isPressed.html",
-    //                     "brief":"現在マウスボタンが押されているか"
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // },
+    {
+        "category":"Mouse",
+        "subcategory":[
+            {
+                "subName":"",
+                "list":[
+                    {
+                        "name":"@mouseMoved",
+                        "link":"./module/Mouse_mouseMoved.html",
+                        "brief":"マウスが移動した時に実行したい関数を指定する"
+                    },
+                    {
+                        "name":"@mousePressed",
+                        "link":"./module/Mouse_mousePressed.html",
+                        "brief":"マウスのボタンが押された時に実行したい関数を指定する"
+                    },
+                    {
+                        "name":"@mouseClicked",
+                        "link":"./module/Mouse_mouseClicked.html",
+                        "brief":"マウスのボタンを押して離した時に実行したい関数を指定する"
+                    },
+                    {
+                        "name":"@mouseDragged",
+                        "link":"./module/Mouse_mouseDragged.html",
+                        "brief":"マウスのボタンを押した状態で動かした時に実行したい関数を指定する"
+                    }
+                ]
+            },
+            {
+                "subName":"変数",
+                "list":[
+                    {
+                        "name":"X",
+                        "link":"./module/Mouse_X.html",
+                        "brief":"マウスカーソルがある現在のX座標"
+                    },
+                    {
+                        "name":"Y",
+                        "link":"./module/Mouse_Y.html",
+                        "brief":"マウスカーソルがある現在のY座標"
+                    },
+                    {
+                        "name":"beforeX",
+                        "link":"./module/Mouse_beforeX.html",
+                        "brief":"マウスカーソルが現在から数ミリ秒前にあった位置のX座標"
+                    },
+                    {
+                        "name":"beforeY",
+                        "link":"./module/Mouse_beforeY.html",
+                        "brief":"マウスカーソルが現在から数ミリ秒前にあった位置のY座標"
+                    },
+                    {
+                        "name":"pressX",
+                        "link":"./module/Mouse_pressX.html",
+                        "brief":"マウスボタンを押したマウスカーソルのX座標"
+                    },
+                    {
+                        "name":"pressY",
+                        "link":"./module/Mouse_pressY.html",
+                        "brief":"マウスボタンを押したマウスカーソルのY座標"
+                    },
+                    {
+                        "name":"clickX",
+                        "link":"./module/Mouse_clickX.html",
+                        "brief":"マウスボタンを押して離した時のマウスカーソルのX座標"
+                    },
+                    {
+                        "name":"clickY",
+                        "link":"./module/Mouse_clickY.html",
+                        "brief":"マウスボタンを押して離した時のマウスカーソルのY座標"
+                    },
+                    {
+                        "name":"mouseButton",
+                        "link":"./module/Mouse_mouseButton.html",
+                        "brief":"押されたマウスボタンの名称"
+                    },
+                    {
+                        "name":"isPressed",
+                        "link":"./module/Mouse_isPressed.html",
+                        "brief":"現在マウスボタンが押されているか"
+                    }
+                ]
+            }
+        ]
+    },
     // {
     //     "category":"Keyboard",
     //     "subcategory":[

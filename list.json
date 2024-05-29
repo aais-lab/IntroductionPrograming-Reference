@@ -351,8 +351,8 @@
                         "brief":"マウスボタンを押して離した時のマウスカーソルのY座標"
                     },
                     {
-                        "name":"pressButton",
-                        "link":"./module/Mouse_pressButton.html",
+                        "name":"mouseButton",
+                        "link":"./module/Mouse_mouseButton.html",
                         "brief":"押されたマウスボタンの種類"
                     },
                     {

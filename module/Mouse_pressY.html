@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Window</p>
+            <p class="Section-module--moduleName">pressY</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,11 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                何らかのマウスボタンを押下したウィンドウ上のマウスカーソルの座標のうち、<b>Y</b>座標をint型で取得できます。
+
+                何らかのボタンが押下されるまでの初期座標は<b>0</b>で、マウスボタンがウィンドウ上で押下されたタイミングでマウスカーソルの<b>Y</b>座標に更新されます。
+                次に何らかのボタンが押下されるまでは、その前にボタンが押下された<b>Y</b>座標が格納されています。
+                座標はウィンドウの左上隅を基準点（<b>X, Y = 0, 0</b>）とする絶対座標系です。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +67,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li>mouse.pressY</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +78,7 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">None</p>     
                 </li>
             </ul>
         </div>
@@ -87,7 +88,7 @@
                 <p class="Section-module--indexJp">戻り値</p>
             </div>
             <!-- 実行時に返却される値 -->
-            <p class="Section-module--return">void</p>
+            <p class="Section-module--return">int型のマウスボタンが押下されたY座標</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -96,8 +97,47 @@
             </div>
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_X.html" class="relatedModule">X</a>
+                </li>
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Mouse_Y.html" class="relatedModule">Y</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_beforeX.html" class="relatedModule">beforeX</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_beforeY.html" class="relatedModule">beforeY</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_pressX.html" class="relatedModule">pressX</a>
+                </li>
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_pressY.html" class="relatedModule">pressY</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_clickX.html" class="relatedModule">clickX</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_clickY.html" class="relatedModule">clickY</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_mouseButton.html" class="relatedModule">mouseButton</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_isPressed.html" class="relatedModule">isPressed</a>
+                </li>
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_mouseMoved.html" class="relatedModule">@mouseMoved</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_mousePressed.html" class="relatedModule">@mousePressed</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_mouseClicked.html" class="relatedModule">@mouseClicked</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Mouse_mouseDragged.html" class="relatedModule">@mouseDragged</a>
                 </li>
             </ul>
         </div>
