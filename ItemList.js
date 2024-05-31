@@ -225,41 +225,41 @@ const allReferenceList =
     //         }
     //     ]
     // },
-    // {
-    //     "category":"Image",
-    //     "subcategory":[
-    //         {
-    //             "subName":"",
-    //             "list":[
-    //                 {
-    //                     "name":"loadImage()",
-    //                     "link":"./module/Image_loadImage.html",
-    //                     "brief":"指定したファイルパスの画像を読み込む"
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "subName":"関数",
-    //             "list":[
-    //                 {
-    //                     "name":"scale()",
-    //                     "link":"./module/Image_scale.html",
-    //                     "brief":"倍率を指定して画像を拡大縮小する"
-    //                 },
-    //                 {
-    //                     "name":"changeAnchor()",
-    //                     "link":"./module/Image_changeAnchor.html",
-    //                     "brief":"画像を表示する座標の指定方式を切り替える"
-    //                 },
-    //                 {
-    //                     "name":"show()",
-    //                     "link":"./module/Image_show.html",
-    //                     "brief":"画像をウィンドウに表示する"
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // },
+    {
+        "category":"Image",
+        "subcategory":[
+            {
+                "subName":"",
+                "list":[
+                    {
+                        "name":"loadImage()",
+                        "link":"./module/Image_loadImage.html",
+                        "brief":"指定したファイルパスの画像を読み込む"
+                    }
+                ]
+            },
+            {
+                "subName":"関数",
+                "list":[
+                    {
+                        "name":"scale()",
+                        "link":"./module/Image_scale.html",
+                        "brief":"倍率を指定して画像を拡大縮小する"
+                    },
+                    {
+                        "name":"changeAnchor()",
+                        "link":"./module/Image_changeAnchor.html",
+                        "brief":"画像を表示する座標の指定方式を切り替える"
+                    },
+                    {
+                        "name":"show()",
+                        "link":"./module/Image_show.html",
+                        "brief":"画像をウィンドウに表示する"
+                    }
+                ]
+            }
+        ]
+    },
     {
         "category":"Color",
         "subcategory":[
