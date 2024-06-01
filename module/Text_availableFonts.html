@@ -40,6 +40,9 @@
                 プログラム中で使用するのではなく、使用可能フォントの確認を行うために使用してください。
                 この関数を実行する際、<b>Window</b>インスタンス等を生成する必要はありません。
                 実行すると使用可能フォントを表示するためのウィンドウが自動的に生成されます。
+
+                関数の引数として任意のフォント名を渡すと、指定したフォントが現在の環境で使用可能かを出力します。
+                この場合は描画用のウィンドウは生成されず、実行したターミナル上に「<b>fontname</b>は使用可能です」もしくは「<b>fontname</b>は使用できません」と出力されます。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -67,7 +70,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>availableFonts()</li>
+                <li>availableFonts(<i>fontname</i>)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -78,7 +81,10 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">None</p>
+                    <p class="paramName">fontname</p>
+                    <p class="paramType">(str)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">任意。確認したいフォント名</p>
                 </li>
             </ul>
         </div>

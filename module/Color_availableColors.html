@@ -18,7 +18,7 @@
         <div class="grid-module--grid Layout-module--content Section-module--category">
             <p>category</p>
             <!-- カテゴリ -->
-            <p class="Section-module--categoryName">Text</p>
+            <p class="Section-module--categoryName">Color</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">availableFonts</p>
+            <p class="Section-module--moduleName">availableColors</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,11 +35,14 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                使用可能なフォント一覧を、実際のフォントとフォント名とともに表示する関数です。
+                使用可能な色名の一覧を、実際の色と色名とともに表示する関数です。
 
-                プログラム中で使用するのではなく、使用可能フォントの確認を行うために使用してください。
+                プログラム中で使用するのではなく、使用可能な色名の確認を行うために使用してください。
                 この関数を実行する際、<b>Window</b>インスタンス等を生成する必要はありません。
-                実行すると使用可能フォントを表示するためのウィンドウが自動的に生成されます。
+                実行すると使用可能な色名を表示するためのウィンドウが自動的に生成されます。
+
+                関数の引数として任意の色名を渡すと、指定した色名が現在の環境で使用可能かを出力します。
+                この場合は描画用のウィンドウは生成されず、実行したターミナル上に「<b>colorname</b>は使用可能です」もしくは「<b>colorname</b>は使用できません」と出力されます。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -67,7 +70,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>availableFonts()</li>
+                <li>availableColors(<i>colorname</i>)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -78,7 +81,10 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">None</p>
+                    <p class="paramName">colorname</p>
+                    <p class="paramType">(str)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">任意。確認したい色名</p>
                 </li>
             </ul>
         </div>
@@ -98,23 +104,14 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Text.html" class="relatedModule">Text</a>
+                    <a href="Color_colorMode.html" class="relatedModule">colorMode()</a>
                 </li>
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Text_font.html" class="relatedModule">font()</a>
+                    <a href="Color.html" class="relatedModule">color()</a>
                 </li>
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Text_fill.html" class="relatedModule">fill()</a>
+                    <a href="Color_COLOR_MODE.html" class="relatedModule">COLOR_MODE</a>
                 </li>
-                <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Text_rotate.html" class="relatedModule">rotate()</a>
-                </li>
-                <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Text_changeBasePoint.html" class="relatedModule">changeBasePoint()</a>
-                </li>
-                <!-- <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Text_availableFonts.html" class="relatedModule">availableFonts()</a>
-                </li> -->
             </ul>
         </div>
         

@@ -273,13 +273,18 @@ const allReferenceList =
                 "list":[
                     {
                         "name":"colorMode()",
-                        "link":"./module/color_colorMode.html",
+                        "link":"./module/Color_colorMode.html",
                         "brief":"カラーモードを指定する"
                     },
                     {
                         "name":"color()",
-                        "link":"./module/color.html",
+                        "link":"./module/Color.html",
                         "brief":"3値で色を指定する"
+                    },
+                    {
+                        "name":"availableColors()",
+                        "link":"./module/Color_availableColors.html",
+                        "brief":"現在の環境で使用可能な色名を表示する"
                     }
                 ]
             },
@@ -288,7 +293,7 @@ const allReferenceList =
                 "list":[
                     {
                         "name":"COLOR_MODE",
-                        "link":"./module/color_COLOR_MODE.html",
+                        "link":"./module/Color_COLOR_MODE.html",
                         "brief":"現在のカラーモード"
                     }
                 ]
