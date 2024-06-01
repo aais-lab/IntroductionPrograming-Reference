@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Image</p>
+            <p class="Section-module--moduleName">changeAnchor</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,12 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                画像を描画する際に使用する画像内の基準点を変更するために使用されます。
+                初期値は中央<b>center</b>で、実行する度に中央<b>center</b>と左上<b>nw</b>が切り替わります。
+
+                例えば、ウィンドウの基準点<b>x=0</b><b>y=0</b>に合わせて画像を表示する際、基準点によって表示される位置が異なります。
+                中央<b>center</b>の場合は画像の中央が<b>x=0</b><b>y=0</b>になるように描画されます。
+                左上<b>nw</b>の場合は画像の左上端が<b>x=0</b><b>y=0</b>になるように描画されます。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +68,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li><i>Image</i>.changeAnchor()</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +79,7 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">None</p>
                 </li>
             </ul>
         </div>
@@ -97,7 +99,16 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Image_loadImage.html" class="relatedModule">loadImage()</a>
+                </li>
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_changeAnchor.html" class="relatedModule">changeAnchor()</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_scale.html" class="relatedModule">scale()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_show.html" class="relatedModule">show()</a>
                 </li>
             </ul>
         </div>

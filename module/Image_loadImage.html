@@ -35,7 +35,14 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                ウィンドウに表示する画像を読み込むために使用されます。
+                使用可能な画像フォーマットは<b>PGM</b>、<b>PPM</b>、<b>GIF</b>、<b>PNG</b>、<b>XBM</b>のいずれかのみです。
+                それ以外の画像フォーマットを選択した場合や拡張子がファイルパスに含まれていない場合は<b>FileTypeError</b>になります。
+
+                <b>@animation</b>デコレータで<b>True</b>を設定した場合、表示されている画像は再描画されるため、各画像フォーマットでアニメーション画像を表示したい場合は注意が必要です。
+
+                <b>loadImage</b>関数な内部的に<b>Image</b>オブジェクトを生成し、描画の基準となる座標点<b>anchor</b>を画像中央<b>center</b>に設定します。
+                描画の基準座標点の変更は<b>changeAnchor</b>関数で、画像の拡大縮小は<b>scale</b>関数で、画像の描画は<b>show</b>関数で可能です。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +70,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>loadImage(<i>filepath</i>)</li>
+                <li>loadImage(filepath)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +81,10 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">filepath</p>
+                    <p class="paramType">(str)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。読み込みたい画像のファイルパス</p>
                 </li>
             </ul>
         </div>
@@ -87,7 +94,7 @@
                 <p class="Section-module--indexJp">戻り値</p>
             </div>
             <!-- 実行時に返却される値 -->
-            <p class="Section-module--return">void</p>
+            <p class="Section-module--return">Imageインスタンス</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -96,8 +103,17 @@
             </div>
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_loadImage.html" class="relatedModule">loadImage()</a>
+                </li> -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Image_changeAnchor.html" class="relatedModule">changeAnchor()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_scale.html" class="relatedModule">scale()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_show.html" class="relatedModule">show()</a>
                 </li>
             </ul>
         </div>

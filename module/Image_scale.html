@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Image</p>
+            <p class="Section-module--moduleName">scale</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,15 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                読み込んだ画像の倍率を変更するために使用されます。
+
+                拡大する場合と縮小する場合は指定する値の範囲が異なります。
+                縮小する場合は<b>0</b>より大きく、<b>1</b>より小さい値を浮動小数点数<b>float</b>で指定してください。縮小率と解釈され、指定された<b>ratio</b>の割合で画像のアスペクト比を保ったまま縮小されます。
+                拡大する場合は<b>1</b>より大きな値を整数<b>int</b>で指定してください。拡大倍率と解釈され、指定された<b>ratio</b>倍に画像のアスペクト比を保ったまま拡大されます。
+                <b>0</b>及び<b>1</b>の場合は、縮小率<b>0</b>、拡大倍率<b>1</b>と解釈され、画像の大きさに変化はありません。
+
+                倍率によって画像サイズを変更するため、画像サイズの微調整を目的とした<b>scale</b>関数の使用は推奨されません。
+                <!-- また、この関数は<b>v1.4.1</b>以降、削除予定です。 -->
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +71,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li><i>Image</i>.scale(ratio)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +82,19 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
+                    <p class="paramName">ratio</p>
                     <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="param Const">0〜1</p>
+                    <p class="paramBrief">縮小される倍率</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName"></p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const">2以上</p>
+                    <p class="paramBrief">拡大される倍率</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramBrief">必須</p>
                 </li>
             </ul>
         </div>
@@ -97,7 +114,16 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Image_loadImage.html" class="relatedModule">loadImage()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_changeAnchor.html" class="relatedModule">changeAnchor()</a>
+                </li>
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_scale.html" class="relatedModule">scale()</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Image_show.html" class="relatedModule">show()</a>
                 </li>
             </ul>
         </div>
