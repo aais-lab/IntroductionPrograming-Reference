@@ -18,7 +18,7 @@
         <div class="grid-module--grid Layout-module--content Section-module--category">
             <p>category</p>
             <!-- カテゴリ -->
-            <p class="Section-module--categoryName">Window</p>
+            <p class="Section-module--categoryName">Music</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Music</p>
+            <p class="Section-module--moduleName">Music.play</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,10 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                <b>Music</b>インスタンスで指定されている音楽ファイルを再生するために使用されます。
+                同一の<b>Music</b>インスタンスで音楽ファイルの再生が行われてない場合にのみ実行されます。
+
+                音楽を再生する機能はMacの標準コマンドを使用するため、Windowsでは使用できません。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +66,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li><i>Music</i>.play()</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +77,7 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">None</p>
                 </li>
             </ul>
         </div>
@@ -97,7 +97,16 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Music.html" class="relatedModule">Music()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Music_loadFile.html" class="relatedModule">loadFile()</a>
+                </li>
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Music_play.html" class="relatedModule">play()</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Music_stop.html" class="relatedModule">stop()</a>
                 </li>
             </ul>
         </div>

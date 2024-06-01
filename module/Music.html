@@ -18,7 +18,7 @@
         <div class="grid-module--grid Layout-module--content Section-module--category">
             <p>category</p>
             <!-- カテゴリ -->
-            <p class="Section-module--categoryName">Window</p>
+            <p class="Section-module--categoryName">Music</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,10 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                音楽を再生するための<b>Music</b>インスタンスを作成します。
+                再生する音楽ファイルの絶対パスを<b>filepath</b>へ渡すことにより、<b>loadFile</b>関数を使用せず再生対象を指定することも可能です。
+
+                音楽を再生する機能はMacの標準コマンドを使用するため、Windowsでは使用できません。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +66,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li>Music(<i>filepath</i>)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +77,10 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">filepath</p>
+                    <p class="paramType">(str)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">任意。再生したい音楽ファイルの絶対パス</p>
                 </li>
             </ul>
         </div>
@@ -87,7 +90,7 @@
                 <p class="Section-module--indexJp">戻り値</p>
             </div>
             <!-- 実行時に返却される値 -->
-            <p class="Section-module--return">void</p>
+            <p class="Section-module--return">Musicインスタンス</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -96,8 +99,17 @@
             </div>
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Music.html" class="relatedModule">Music()</a>
+                </li> -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Music_loadFile.html" class="relatedModule">loadFile()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Music_play.html" class="relatedModule">play()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Music_stop.html" class="relatedModule">stop()</a>
                 </li>
             </ul>
         </div>

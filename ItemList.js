@@ -475,39 +475,39 @@ const allReferenceList =
             }
         ]
     },
-    // {
-    //     "category":"Music",
-    //     "subcategory":[
-    //         {
-    //             "subname":"",
-    //             "list":[
-    //                 {
-    //                     "name":"Music",
-    //                     "link":"./module/Music.html",
-    //                     "brief":""
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "subname":"関数",
-    //             "list":[
-    //                 {
-    //                     "name":"loadFile()",
-    //                     "link":"./module/Music_loadFile.html",
-    //                     "brief":""
-    //                 },
-    //                 {
-    //                     "name":"play()",
-    //                     "link":"./module/Music_play.html",
-    //                     "brief":""
-    //                 },
-    //                 {
-    //                     "name":"stop()",
-    //                     "link":"./module/Music_stop.html",
-    //                     "brief":""
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // }
+    {
+        "category":"Music",
+        "subcategory":[
+            {
+                "subname":"",
+                "list":[
+                    {
+                        "name":"Music",
+                        "link":"./module/Music.html",
+                        "brief":"ファイルを指定して音楽を再生する"
+                    }
+                ]
+            },
+            {
+                "subname":"関数",
+                "list":[
+                    {
+                        "name":"loadFile()",
+                        "link":"./module/Music_loadFile.html",
+                        "brief":"再生するファイルを指定する"
+                    },
+                    {
+                        "name":"play()",
+                        "link":"./module/Music_play.html",
+                        "brief":"音楽を再生する"
+                    },
+                    {
+                        "name":"stop()",
+                        "link":"./module/Music_stop.html",
+                        "brief":"再生している音楽を停止する"
+                    }
+                ]
+            }
+        ]
+    }
 ]
