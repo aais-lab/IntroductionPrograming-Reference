@@ -185,46 +185,51 @@ const allReferenceList =
             }
         ]
     },
-    // {
-    //     "category":"Text",
-    //     "subcategory":[
-    //         {
-    //             "subName":"",
-    //             "list":[
-    //                 {
-    //                     "name":"Text",
-    //                     "link":"./module/Text.html",
-    //                     "brief":"指定したテキストをウィンドウに表示する"
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "subName":"関数",
-    //             "list":[
-    //                 {
-    //                     "name":"font()",
-    //                     "link":"./module/Text_font.html",
-    //                     "brief":"フォントと文字サイズを変更する"
-    //                 },
-    //                 {
-    //                     "name":"fill()",
-    //                     "link":"./module/Text_fill.html",
-    //                     "brief":"色を指定して文字色を変更する"
-    //                 },
-    //                 {
-    //                     "name":"rotate()",
-    //                     "link":"./module/Text_rotate.html",
-    //                     "brief":"回転の中心座標を中心に指定された角度だけテキストを回転させる"
-    //                 },
-    //                 {
-    //                     "name":"changeBasePoint()",
-    //                     "link":"./module/Text_changeBasePoint.html",
-    //                     "brief":"テキストの回転の中心となる座標を変更する"
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // },
+    {
+        "category":"Text",
+        "subcategory":[
+            {
+                "subName":"",
+                "list":[
+                    {
+                        "name":"Text",
+                        "link":"./module/Text.html",
+                        "brief":"指定したテキストをウィンドウに表示する"
+                    }
+                ]
+            },
+            {
+                "subName":"関数",
+                "list":[
+                    {
+                        "name":"font()",
+                        "link":"./module/Text_font.html",
+                        "brief":"フォントと文字サイズを変更する"
+                    },
+                    {
+                        "name":"fill()",
+                        "link":"./module/Text_fill.html",
+                        "brief":"色を指定して文字色を変更する"
+                    },
+                    {
+                        "name":"rotate()",
+                        "link":"./module/Text_rotate.html",
+                        "brief":"回転の中心座標を中心に指定された角度だけテキストを回転させる"
+                    },
+                    {
+                        "name":"changeBasePoint()",
+                        "link":"./module/Text_changeBasePoint.html",
+                        "brief":"テキストの回転の中心となる座標を変更する"
+                    },
+                    {
+                        "name":"availableFonts()",
+                        "link":"./module/Text_availableFonts.html",
+                        "brief":"現在の環境で使用可能なフォントを表示する"
+                    }
+                ]
+            }
+        ]
+    },
     {
         "category":"Image",
         "subcategory":[

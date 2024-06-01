@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Window</p>
+            <p class="Section-module--moduleName">Text.changeBasePoint</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,10 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                文字の回転軸を変更するために使用されます。
+
+                <b>rotate</b>関数の回転の基準座標を、指定した任意の座標<b>base_x</b>,<b>base_y</b>に変更できます。
+                <b>Text</b>インスタンスで初期値となる回転の基準座標はウィンドウの左上座標<b>0</b>,<b>0</b>です。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +66,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li><i>Text</i>.changeBasePoint(base_x, base_y)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +77,16 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">base_x</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。回転軸のX座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">base_y</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。回転軸のY座標</p>
                 </li>
             </ul>
         </div>
@@ -97,7 +106,22 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Text.html" class="relatedModule">Text</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_font.html" class="relatedModule">font()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_fill.html" class="relatedModule">fill()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_rotate.html" class="relatedModule">rotate()</a>
+                </li>
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_changeBasePoint.html" class="relatedModule">changeBasePoint()</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_availableFonts.html" class="relatedModule">availableFonts()</a>
                 </li>
             </ul>
         </div>

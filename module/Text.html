@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Window</p>
+            <p class="Section-module--moduleName">Text</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,15 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                ウィンドウ上に任意のテキストを表示するために使用されます。
+
+                指定されたテキストはOSのデフォルトフォント（MacではHelvetica、WindowsではSegoe UI）<b>20pt</b>で表示されます。
+                フォントカラーは<b>black</b>で表示されますが、<b>fill</b>関数で変更可能です。
+                フォントを変更したい場合は<b>font</b>関数で変更可能です。
+                また、使用可能なフォントは<b>availableFonts</b>関数で確認できます。
+
+                指定した<b>X</b>座標、<b>Y</b>座標は表示されるテキストの中心座標になります。
+                テキストはウィンドウを超えても1行で表示されますが、改行コード<b>\n</b>を含む文字列の場合は改行コードの位置で改行されます。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +71,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li>Text(text, x, y)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +82,22 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">text</p>
+                    <p class="paramType">(str)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。表示したい文字列</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">x</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。表示位置のX座標</p>
+                </li>
+                <li class="grid-module--grid Section-module--paramItem">
+                    <p class="paramName">y</p>
+                    <p class="paramType">(int)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。表示位置のY座標</p>
                 </li>
             </ul>
         </div>
@@ -87,7 +107,7 @@
                 <p class="Section-module--indexJp">戻り値</p>
             </div>
             <!-- 実行時に返却される値 -->
-            <p class="Section-module--return">void</p>
+            <p class="Section-module--return">Textインスタンス</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -97,7 +117,19 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Text_font.html" class="relatedModule">font()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_fill.html" class="relatedModule">fill()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_rotate.html" class="relatedModule">rotate()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_changeBasePoint.html" class="relatedModule">changeBasePoint()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Text_availableFonts.html" class="relatedModule">availableFonts()</a>
                 </li>
             </ul>
         </div>
