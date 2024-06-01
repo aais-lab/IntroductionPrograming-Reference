@@ -380,51 +380,51 @@ const allReferenceList =
             }
         ]
     },
-    // {
-    //     "category":"Keyboard",
-    //     "subcategory":[
-    //         {
-    //             "subName":"",
-    //             "list":[
-    //                 {
-    //                     "name":"@keyPressed",
-    //                     "link":"./module/Keyboard_keyPressed.html",
-    //                     "brief":"キーボードのいずれかのキーが押されている時に実行したい関数を指定する"
-    //                 },
-    //                 {
-    //                     "name":"@keyReleased",
-    //                     "link":"./module/Keyboard_keyReleased.html",
-    //                     "brief":"キーボードのいずれかのキーが離された時に実行したい関数を指定する"
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "subName":"変数",
-    //             "list":[
-    //                 {
-    //                     "name":"key",
-    //                     "link":"./module/Keyboard_key.html",
-    //                     "brief":"押されたキー"
-    //                 },
-    //                 {
-    //                     "name":"code",
-    //                     "link":"./module/Keyboard_code.html",
-    //                     "brief":"押されたキーのキー番号"
-    //                 },
-    //                 {
-    //                     "name":"char",
-    //                     "link":"./module/Keyboard_char.html",
-    //                     "brief":"押されたキーで入力される文字"
-    //                 },
-    //                 {
-    //                     "name":"isPressed",
-    //                     "link":"./module/Keyboard_isPressed.html",
-    //                     "brief":"現在キーボードのキーが押されているか"
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // },
+    {
+        "category":"Keyboard",
+        "subcategory":[
+            {
+                "subName":"",
+                "list":[
+                    {
+                        "name":"@keyPressed",
+                        "link":"./module/Keyboard_keyPressed.html",
+                        "brief":"キーボードのいずれかのキーが押されている時に実行したい関数を指定する"
+                    },
+                    {
+                        "name":"@keyReleased",
+                        "link":"./module/Keyboard_keyReleased.html",
+                        "brief":"キーボードのいずれかのキーが離された時に実行したい関数を指定する"
+                    }
+                ]
+            },
+            {
+                "subName":"変数",
+                "list":[
+                    {
+                        "name":"key",
+                        "link":"./module/Keyboard_key.html",
+                        "brief":"押されたキー"
+                    },
+                    {
+                        "name":"code",
+                        "link":"./module/Keyboard_code.html",
+                        "brief":"押されたキーのキー番号"
+                    },
+                    {
+                        "name":"char",
+                        "link":"./module/Keyboard_char.html",
+                        "brief":"押されたキーで入力される文字"
+                    },
+                    {
+                        "name":"isPressed",
+                        "link":"./module/Keyboard_isPressed.html",
+                        "brief":"現在キーボードのキーが押されているか"
+                    }
+                ]
+            }
+        ]
+    },
     {
         "category":"Date",
         "subcategory":[

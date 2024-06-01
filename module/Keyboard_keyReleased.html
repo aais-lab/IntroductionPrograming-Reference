@@ -18,7 +18,7 @@
         <div class="grid-module--grid Layout-module--content Section-module--category">
             <p>category</p>
             <!-- カテゴリ -->
-            <p class="Section-module--categoryName">Window</p>
+            <p class="Section-module--categoryName">Keyboard</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Window</p>
+            <p class="Section-module--moduleName">@keyReleased</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,7 +35,10 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                ウィンドウを描画するための
+                キーボードのなんらかのキーを押下した後離した際に処理を行う関数に付与するデコレータです。
+                このデコレータを付与した関数は、キーボードのなんらかのキーが押下されたのちに離された際に実行されます。
+
+                現在いずれかのキーが押下されているかは<b>isPressed</b>変数に、押下されているキーは<b>key</b>に、固有番号は<b>code</b>に、押下されているキーで入力される文字は<b>char</b>に格納されます。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -63,7 +66,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li>function(a,b)</li>
+                <li>@keyReleased</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -74,10 +77,7 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">x1</p>
-                    <p class="paramType">(float)</p>
-                    <p class="param Const">1〜1000</p>
-                    <p class="paramBrief">開始座標</p>
+                    <p class="paramName">None</p>
                 </li>
             </ul>
         </div>
@@ -97,7 +97,22 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="" class="relatedModule">function()</a>
+                    <a href="Keyboard_keyPressed.html" class="relatedModule">@keyPressed</a>
+                </li>
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Keyboard_keyReleased.html" class="relatedModule">@keyReleased</a>
+                </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Keyboard_key.html" class="relatedModule">key</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Keyboard_code.html" class="relatedModule">code</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Keyboard_char.html" class="relatedModule">char</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Keyboard_isPressed.html" class="relatedModule">isPressed</a>
                 </li>
             </ul>
         </div>
