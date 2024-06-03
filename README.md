@@ -15,5 +15,8 @@
 
 [IntroductionPrograming-library](https://github.com/aais-lab/IntroductionPrograming-library)
 
+## Author
+[Nao Yamanouchi](https://github.com/ClairdelunaEve)
+
 ## Licence
 The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
