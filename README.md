@@ -6,7 +6,7 @@
 - GitHub pages
 
 ## Usage
-[IntroductionPrograming-Reference](https://github.com/aais-lab/IntroductionPrograming-Reference/deployments/github-pages)
+[IntroductionPrograming-Reference](https://github.com/aais-lab/IntroductionPrograming-Reference)
 
 ページ上部の「Fillter by Keywords...」へ文字を入力することによって、表示する項目にフィルターをかけることができます。
 
