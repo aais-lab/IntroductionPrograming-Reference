@@ -12,8 +12,9 @@
 
 ## Reference
 ライブラリ本体
+<img src="https://img.shields.io/badge/-GitHub-181717.svg?logo=github&style=flat">
 
-[IntroductionPrograming-library](https://github.com/aais-lab/IntroductionPrograming-library)
+https://github.com/aais-lab/IntroductionPrograming-library
 
 ## Author
 [Nao Yamanouchi](https://github.com/ClairdelunaEve)
