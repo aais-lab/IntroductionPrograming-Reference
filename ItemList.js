@@ -317,8 +317,8 @@ const allReferenceList =
                         "brief":"マウスのボタンが押された時に実行したい関数を指定する"
                     },
                     {
-                        "name":"@mouseClicked",
-                        "link":"./module/Mouse_mouseClicked.html",
+                        "name":"@mouseReleased",
+                        "link":"./module/Mouse_mouseReleased.html",
                         "brief":"マウスのボタンを押して離した時に実行したい関数を指定する"
                     },
                     {
