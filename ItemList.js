@@ -265,6 +265,11 @@ const allReferenceList =
                         "name":"show()",
                         "link":"./module/Image_show.html",
                         "brief":"画像をウィンドウに表示する"
+                    },
+                    {
+                        "name":"delete()",
+                        "link":"./module/Image_delete.html",
+                        "brief":"呼び出された画像を削除する"
                     }
                 ]
             }
