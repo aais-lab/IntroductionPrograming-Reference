@@ -251,11 +251,11 @@ const allReferenceList =
             {
                 "subName":"関数",
                 "list":[
-                    {
-                        "name":"scale()",
-                        "link":"./module/Image_scale.html",
-                        "brief":"倍率を指定して画像を拡大縮小する"
-                    },
+                    // {
+                    //     "name":"scale()",
+                    //     "link":"./module/Image_scale.html",
+                    //     "brief":"倍率を指定して画像を拡大縮小する"
+                    // },
                     {
                         "name":"changeAnchor()",
                         "link":"./module/Image_changeAnchor.html",
