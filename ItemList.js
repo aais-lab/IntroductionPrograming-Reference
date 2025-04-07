@@ -489,7 +489,7 @@ const allReferenceList =
         "category":"Music",
         "subcategory":[
             {
-                "subname":"",
+                "subName":"",
                 "list":[
                     {
                         "name":"loadMusic",
@@ -499,7 +499,7 @@ const allReferenceList =
                 ]
             },
             {
-                "subname":"関数",
+                "subName":"関数",
                 "list":[
                     {
                         "name":"play()",
