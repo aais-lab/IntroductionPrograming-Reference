@@ -222,6 +222,11 @@ const allReferenceList =
                         "brief":"テキストの回転の中心となる座標を変更する"
                     },
                     {
+                        "name":"delete()",
+                        "link":"./module/Text_delete.html",
+                        "brief":"呼び出されたテキストオブジェクトを削除する"
+                    },
+                    {
                         "name":"availableFonts()",
                         "link":"./module/Text_availableFonts.html",
                         "brief":"現在の環境で使用可能なフォントを表示する"
@@ -246,11 +251,11 @@ const allReferenceList =
             {
                 "subName":"関数",
                 "list":[
-                    {
-                        "name":"scale()",
-                        "link":"./module/Image_scale.html",
-                        "brief":"倍率を指定して画像を拡大縮小する"
-                    },
+                    // {
+                    //     "name":"scale()",
+                    //     "link":"./module/Image_scale.html",
+                    //     "brief":"倍率を指定して画像を拡大縮小する"
+                    // },
                     {
                         "name":"changeAnchor()",
                         "link":"./module/Image_changeAnchor.html",
@@ -260,6 +265,11 @@ const allReferenceList =
                         "name":"show()",
                         "link":"./module/Image_show.html",
                         "brief":"画像をウィンドウに表示する"
+                    },
+                    {
+                        "name":"delete()",
+                        "link":"./module/Image_delete.html",
+                        "brief":"呼び出された画像を削除する"
                     }
                 ]
             }
@@ -482,20 +492,15 @@ const allReferenceList =
                 "subname":"",
                 "list":[
                     {
-                        "name":"Music",
-                        "link":"./module/Music.html",
-                        "brief":"ファイルを指定して音楽を再生する"
+                        "name":"loadMusic",
+                        "link":"./module/Music_loadMusic.html",
+                        "brief":"指定したファイルパスの音楽を読み込む"
                     }
                 ]
             },
             {
                 "subname":"関数",
                 "list":[
-                    {
-                        "name":"loadFile()",
-                        "link":"./module/Music_loadFile.html",
-                        "brief":"再生するファイルを指定する"
-                    },
                     {
                         "name":"play()",
                         "link":"./module/Music_play.html",
