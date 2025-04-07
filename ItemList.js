@@ -492,20 +492,15 @@ const allReferenceList =
                 "subname":"",
                 "list":[
                     {
-                        "name":"Music",
-                        "link":"./module/Music.html",
-                        "brief":"ファイルを指定して音楽を再生する"
+                        "name":"loadMusic",
+                        "link":"./module/Music_loadMusic.html",
+                        "brief":"指定したファイルパスの音楽を読み込む"
                     }
                 ]
             },
             {
                 "subname":"関数",
                 "list":[
-                    {
-                        "name":"loadFile()",
-                        "link":"./module/Music_loadFile.html",
-                        "brief":"再生するファイルを指定する"
-                    },
                     {
                         "name":"play()",
                         "link":"./module/Music_play.html",

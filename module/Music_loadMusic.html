@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Music.play</p>
+            <p class="Section-module--moduleName">loadMusic</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,8 +35,11 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                <b>Music</b>インスタンスで指定されている音楽ファイルを再生するために使用されます。
-                同一の<b>Music</b>インスタンスで音楽ファイルの再生が行われてない場合にのみ実行されます。
+                音楽ファイルを読み込み、任意のタイミングで再生するために使用されます。
+                音楽ファイルは実行するPythonファイルと同階層にあるdataフォルダ内に存在する必要があります。
+                dataフォルダ以外の場所にある画像の読み込みはできません。
+                また、ファイルパスの指定はdataフォルダからのパスです。
+                例えばdataフォルダの直下にある<b>music.mp3</b>を指定する場合は<b>loadMusic("music.mp3")</b>となります。
 
                 音楽を再生する機能はMacの標準コマンドを使用するため、Windowsでは使用できません。
             </pre>
@@ -66,7 +69,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li><i>Music</i>.play()</li>
+                <li>loadMusic(filepath)</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -77,7 +80,10 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">None</p>
+                    <p class="paramName">filepath</p>
+                    <p class="paramType">(str)</p>
+                    <p class="param Const"></p>
+                    <p class="paramBrief">必須。再生したい音楽ファイルのdataフォルダからのパス</p>
                 </li>
             </ul>
         </div>
@@ -87,7 +93,7 @@
                 <p class="Section-module--indexJp">戻り値</p>
             </div>
             <!-- 実行時に返却される値 -->
-            <p class="Section-module--return">void</p>
+            <p class="Section-module--return">Musicインスタンス</p>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -96,12 +102,12 @@
             </div>
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
-                <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Music_loadMusic.html" class="relatedModule">loadMusic()</a>
-                </li>
                 <!-- <li class="grid-module--grid Section-module--relatedItem">
-                    <a href="Music_play.html" class="relatedModule">play()</a>
+                    <a href="Music.html" class="relatedModule">loadMusic()</a>
                 </li> -->
+                <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Music_play.html" class="relatedModule">play()</a>
+                </li>
                 <li class="grid-module--grid Section-module--relatedItem">
                     <a href="Music_stop.html" class="relatedModule">stop()</a>
                 </li>
