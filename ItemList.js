@@ -222,6 +222,11 @@ const allReferenceList =
                         "brief":"テキストの回転の中心となる座標を変更する"
                     },
                     {
+                        "name":"delete()",
+                        "link":"./module/Text_delete.html",
+                        "brief":"呼び出されたテキストオブジェクトを削除する"
+                    },
+                    {
                         "name":"availableFonts()",
                         "link":"./module/Text_availableFonts.html",
                         "brief":"現在の環境で使用可能なフォントを表示する"

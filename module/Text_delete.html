@@ -26,7 +26,7 @@
                 <p class="Section-module--indexJp">名前</p>
             </div>
             <!-- このページで説明するやつ -->
-            <p class="Section-module--moduleName">Text.font</p>
+            <p class="Section-module--moduleName">Text.delete</p>
         </div>
         <div class="grid-module--col Layout-module--content">
             <div class="Section-module--index">
@@ -35,14 +35,9 @@
             </div>
             <!-- クラス・関数の説明 -->
             <pre class="Section-module--descriptionText">
-                表示するテキストのフォントや文字サイズを変更するために使用されます。
-                フォントは変更せず文字サイズのみを変更する、もしくはデフォルトフォントに変更する場合は引数<b>fontName</b>に空文字<b>""</b>を指定してください。
-                
-                <b>Text</b>インスタンスが初期値は、フォントはOSのデフォルトフォント（MacではHelvetica、WindowsではSegoe UI）、文字サイズ<b>20pt</b>です。
-                
-                使用可能フォントは<b>availableFonts</b>関数で確認できます。
-                また、実行時に使用可能でないフォントを<b>fontName</b>で指定した場合、<b>FontError</b>が送出されます。
-                
+                描画したテキスト単体を任意のタイミングで削除するために使用されます。
+
+                v 1.5.1以降のバージョンで使用可能です。
             </pre>
         </div>
         <div class="grid-module--col Layout-module--content hide">
@@ -70,7 +65,7 @@
             </div>
             <ul class="Section-module--syntaxList">
                 <!-- 構文 -->
-                <li><i>Text</i>.font(fontName, fontSize)</li>
+                <li><i>Text</i>.delete()</li>
             </ul>
         </div>
         <div class="grid-module--grid grid-module--col Layout-module--content">
@@ -81,16 +76,7 @@
             <ul class="Section-module--paramList">
                 <!-- 必要なパラメータ -->
                 <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">fontName</p>
-                    <p class="paramType">(str)</p>
-                    <p class="param Const"></p>
-                    <p class="paramBrief">必須。使用するフォント名</p>
-                </li>
-                <li class="grid-module--grid Section-module--paramItem">
-                    <p class="paramName">fontSize</p>
-                    <p class="paramType">(int)</p>
-                    <p class="param Const"></p>
-                    <p class="paramBrief">必須。文字サイズ</p>
+                    <p class="paramName">None</p>
                 </li>
             </ul>
         </div>
@@ -110,11 +96,14 @@
             <ul class="Section-module--relatedList">
                 <!-- 関連する関数・クラス -->
                 <li class="grid-module--grid Section-module--relatedItem">
+                    <a href="Color.html" class="relatedModule">color()</a>
+                </li>
+                <li class="grid-module--grid Section-module--relatedItem">
                     <a href="Text.html" class="relatedModule">Text</a>
                 </li>
-                <!-- <li class="grid-module--grid Section-module--relatedItem">
+                <li class="grid-module--grid Section-module--relatedItem">
                     <a href="Text_font.html" class="relatedModule">font()</a>
-                </li> -->
+                </li>
                 <li class="grid-module--grid Section-module--relatedItem">
                     <a href="Text_fill.html" class="relatedModule">fill()</a>
                 </li>
@@ -124,9 +113,9 @@
                 <li class="grid-module--grid Section-module--relatedItem">
                     <a href="Text_changeBasePoint.html" class="relatedModule">changeBasePoint()</a>
                 </li>
-                <li class="grid-module--grid Section-module--relatedItem">
+                <!-- <li class="grid-module--grid Section-module--relatedItem">
                     <a href="Text_delete.html" class="relatedModule">delete()</a>
-                </li>
+                </li> -->
                 <li class="grid-module--grid Section-module--relatedItem">
                     <a href="Text_availableFonts.html" class="relatedModule">availableFonts()</a>
                 </li>
